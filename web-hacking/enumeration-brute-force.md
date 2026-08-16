@@ -1,39 +1,34 @@
-# TryHackMe — Web Application Pentesting: Enumeration & Brute Force
+# TryHackMe — Enumeration & Brute Force
 
-**Room:** Enumeration & Brute Force  
-**Date:** 15 août 2026  
-**Status:** 🔄 In Progress
+**Date:** 16 août 2026  
+**Status:** 🔄 In Progress (Lab DNS issues)
 
-## 🎯 Objective
-Learn enumeration and brute force techniques for web application penetration testing.
+## 🎯 What You Learn
+- **Enumeration** = Finding valid usernames/emails before attacking
+- **Brute Force** = Testing multiple passwords to crack accounts
+- Finding valid users through registration pages, password reset, verbose errors
 
-## 📝 Key Concepts — Task 1
+## 🔍 Enumeration Techniques
 
-**Enumeration = Finding valid usernames/emails in a web application**
+**Common Places to Enumerate:**
+1. **Registration Pages** — App confirms if email exists
+2. **Password Reset** — Different responses reveal if username exists
+3. **Verbose Error Messages** — "Username not found" vs "Wrong password"
+4. **Data Breaches** — Testing reused credentials across platforms
 
-### Common Places to Enumerate:
+## 🛠️ Tools Used
+- Python script (requests library) to automate email checking
+- dirb for directory enumeration
 
-1. **Registration Pages**
-   - App confirms if email/username already exists
-   - Attackers use this to build lists of valid users
+## Key Learnings
+- Verbose error messages leak information about valid users
+- Enumeration = first step before brute force
+- Script can test 100s of emails automatically
 
-2. **Password Reset Features**
-   - Different responses reveal if username exists
-   - "Username found" vs "Username not found" messages
+## ❌ Challenges Encountered
+- Lab DNS resolution issues (enum.thm not accessible)
+- Tested multiple solutions but server connectivity problem
 
-3. **Verbose Error Messages**
-   - Distinguish between "username not found" and "incorrect password"
-   - Directly confirms valid usernames
-
-4. **Data Breach Information**
-   - Compromised credentials from past breaches
-   - Attackers test username/password reuse across platforms
-
-## ✅ Task 1 Answers
-
-| Question | Answer |
-|----------|--------|
-| Type of error messages revealing valid usernames | Verbose error messages |
-
-## 🔜 Next
-Task 2 — Brute Force techniques
+## Next Steps
+- Retry when lab infrastructure is stable
+- Learn brute force password cracking techniques
