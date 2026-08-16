@@ -17,6 +17,8 @@
 
 ## ⚽ Football Analogy
 
+<div align="center">
+
 | Football | Cybersecurity |
 |----------|----------------|
 | Scout opponent formation | Reconnaissance & Nmap scanning |
@@ -26,6 +28,7 @@
 | Defend your goal | Secure systems |
 | Win the match | Prevent breach |
 
+</div>
 ---
 
 ## 👨‍💻 The Player: Azer
