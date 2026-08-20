@@ -1,6 +1,6 @@
 # TryHackMe — Detecting Web Attacks
 
-**Date:** 17 août 2026  
+**Date:** 20 août 2026  
 **Status:** 🔄 In Progress (76%)
 
 ## 🎯 What You Learn
