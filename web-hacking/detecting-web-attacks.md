@@ -1,37 +1,48 @@
 # TryHackMe — Detecting Web Attacks
 
 **Date:** 20 août 2026  
-**Status:** 🔄 In Progress (76%)
+**Status:** ✅ Complete (100%)
 
 ## 🎯 What You Learn
-How to **detect and defend** against web attacks through logs and network monitoring.
-
-**Topics Covered:**
-- Client-Side Attacks (XSS, CSRF)
-- Server-Side Attacks (SQLi, command injection)
-- Log-Based Detection (analyzing attack patterns)
-- Network-Based Detection (IDS/IPS)
-- Web Application Firewall (WAF)
+How to **detect and defend** against web attacks through logs, network monitoring, and WAFs.
 
 ## 🛡️ Detection Methods
 
-**Log Analysis:**
-- Failed login attempts
-- Suspicious SQL queries
-- Unusual file access
+**Client-Side Attacks**
+- XSS, CSRF detection
+- Malicious script patterns
 
-**Network Analysis:**
+**Server-Side Attacks**
+- SQL Injection patterns
+- Command injection attempts
+
+**Log-Based Detection**
+- Analyze failed login attempts
+- Track suspicious SQL queries
+- Monitor unusual file access
+
+**Network-Based Detection**
+- IDS/IPS systems
 - Unusual traffic patterns
 - Protocol violations
-- Known attack signatures
 
-## Tasks Completed
-- ✅ Task 1: Introduction
-- ✅ Task 2: Client-Side Attacks
-- ✅ Task 3: Server-Side Attacks
-- ✅ Task 4: Log-Based Detection
-- ✅ Task 5: Network-Based Detection
-- 🔄 Task 6: Web Application Firewall
-- ⏳ Task 7: Conclusion
+**Web Application Firewall (WAF)**
+- Inspects full request packets
+- Blocks known attack patterns
+- Rate-limiting & abuse prevention
+- Challenge-response (CAPTCHA)
+- Threat intelligence integration
 
-**Current Progress:** 76%
+## 🚨 WAF Rule Examples
+If User-Agent contains "sqlmap" then BLOCK
+If User-Agent contains "BotTHM" then BLOCK
+If IP reputation = malicious then BLOCK
+If login attempts > 5/min per IP then RATE_LIMIT
+
+## ✅ Key Takeaways
+- WAFs = first line of defense
+- Rules block known attack patterns
+- Threat intel keeps rules updated
+- Balance: block threats without breaking legitimate traffic
+
+**Result:** Room 100% Complete ✅
